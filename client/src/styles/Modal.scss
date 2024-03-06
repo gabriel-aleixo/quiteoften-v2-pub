@@ -1,0 +1,22 @@
+.modal 
+  position fixed
+  top 50%
+  left 50%
+  transform translate(-50%, -50%) scale(0)
+  animation show .25s ease forwards
+  z-index 2
+  background #fafafa
+  padding 1rem
+  min-height 200px
+  min-width 200px
+  display flex
+  align-items center
+  justify-content center
+  
+  
+  &__close
+    position absolute
+    top 4px
+    right 4px
+    font-size 1.25rem
+    font-weight bold

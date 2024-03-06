@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "./node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+$blue: #757575;
+$qtoft-green: #3ab795;
+$qtoft-green-invert: #fff;
+$qtoft-red: #ef3e3e;
+$qtoft-red-invert: #fff;
+$qtoft-orange: #ff7d3d;
+$qtoft-amber: #e3b921;
+$qtoft-orange-invert: #fff;
+$qtoft-navbar-break: 769px;
+$qtoft-radius-large: 8px;
+$qtoft-radius-small: 6px;
+$qtoft-box-shadow: 0 0 0.25em rgba(0,0,0, 0.2);
+$qtoft-list-hover: hsl(0, 0%, 96%);
+$qtoft-list-image-margin: 0.5em;
+
+// Update the font families
+$family-sans-serif: "Open Sans", Roboto, sans-serif;
+$family-monospace: "Lucida Console", Courier, monospace;
+$family-secondary: Comfortaa, Lato, sans-serif;
+
+// 3. Set the derived variables
+$primary: $qtoft-green;
+$primary-invert: $qtoft-green-invert;
+$danger: $qtoft-red;
+$info: $qtoft-amber;
+$danger-invert: $qtoft-red-invert;
+$warning: $qtoft-orange;
+$warning-invert: $qtoft-orange-invert;
+$navbar-breakpoint: $qtoft-navbar-break;
+$tabs-link-active-color: $qtoft-green;
+$tabs-link-active-border-bottom-color: $qtoft-green;
+$radius: $qtoft-radius-large;
+$radius-large: $qtoft-radius-large;
+$radius-small: $qtoft-radius-small;
+$box-shadow: $qtoft-box-shadow;
+$list-item-hover-color: $qtoft-list-hover;
+$list-item-image-margin: $qtoft-list-image-margin;
+
+// 4. Import the rest of Bulma
+@import "./node_modules/bulma/bulma.sass";
+
+//Immport Add ons
+@import "./node_modules/bulma-list/sass/bulma-list.sass";
+
+
+// Import Font Awesome
+// @import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "./node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+// @import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// Import Additional styles
+@import "App.scss";
+@import "Jitsi.scss";
+// @import "Modal.scss";

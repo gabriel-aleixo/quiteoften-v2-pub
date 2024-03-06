@@ -1,0 +1,45 @@
+{
+  "name": "quiteoften-fusion",
+  "version": "1.0.0",
+  "description": "React Single Page Web App running on Express server",
+  "main": "build/server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "start": "node ./build/serv/server.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "cd server && ./node_modules/.bin/babel . --ignore ./node_modules --out-dir ../build/serv --copy-files --include-dotfiles",
+    "build-client": "cd client && npm run build-client",
+    "build": "npm run clean && npm run build-server && npm run build-client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-aleixo/quiteoften-fusion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel-aleixo/quiteoften-fusion/issues"
+  },
+  "homepage": "https://github.com/gabriel-aleixo/quiteoften-fusion#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.7",
+    "@sentry/integrations": "^6.18.1",
+    "@sentry/node": "^6.18.0",
+    "axios": "^0.25.0",
+    "babel-plugin-inline-dotenv": "^1.6.0",
+    "body-parser": "^1.19.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "helmet": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.7",
+    "pg": "^8.7.1"
+  }
+}
